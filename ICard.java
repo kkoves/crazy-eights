@@ -1,3 +1,5 @@
+//package crazyeights;
+
 /**
  * Card interface
  * @authors Krisztián Köves, Brendon Boldt
@@ -9,7 +11,7 @@ public interface ICard {
   public Suit getSuit();
   
   public enum Rank {
-    Ace, One, Two, Three,
+    Ace, Two, Three,
     Four, Five, Six, Seven,
     Eight, Nine, Ten,
     Jack, Queen, King;

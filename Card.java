@@ -1,11 +1,8 @@
-/**
- * Auto Generated Java Class.
- */
+//package crazyeights;
+
 public class Card implements ICard {
   Rank rank;
   Suit suit;
-  
-
   
   public static void main(String[] args) { 
     System.out.println(new Card(Card.Rank.Ace,Card.Suit.Spades));
