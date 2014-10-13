@@ -1,5 +1,3 @@
-//package crazyeights;
-
 /**
  * Deck Class
  * Uses ArrayList class to make a standard 52-card deck.
@@ -46,9 +44,9 @@ public class Deck {
     if(!cards.isEmpty())
       return cards.remove(cards.size()-1); //remove() returns card removed, return that as end result
     else {
-      for(int i=0; i < discards.size()-1; i++) //transfer discards (except head of discards) into deck
+      while(discards.size() > 1) //transfer discards (except head of discards) into deck
       {
-        cards.set(i,discards.remove(i));
+        cards.set(i,discards.remove(0));
       }
       shuffle(); //re-shuffle after transferring discards into deck
       return null;

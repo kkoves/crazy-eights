@@ -1,5 +1,3 @@
-//package crazyeights;
-
 public class Card implements ICard {
   Rank rank;
   Suit suit;

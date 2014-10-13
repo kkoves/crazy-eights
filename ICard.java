@@ -1,5 +1,3 @@
-//package crazyeights;
-
 /**
  * Card interface
  * @authors Krisztián Köves, Brendon Boldt
