@@ -1,3 +1,9 @@
+/**
+ * Card Class
+ * Class to represent a playing card, implements ICard interface
+ * @authors Krisztián Köves, Brendon Boldt
+ * @date 9/29/2014
+
 public class Card implements ICard {
   Rank rank;
   Suit suit;
