@@ -44,9 +44,11 @@ public class Deck {
     if(!cards.isEmpty())
       return cards.remove(cards.size()-1); //remove() returns card removed, return that as end result
     else {
+      int i = 0;
       while(discards.size() > 1) //transfer discards (except head of discards) into deck
       {
         cards.set(i,discards.remove(0));
+        i++;
       }
       shuffle(); //re-shuffle after transferring discards into deck
       return null;
