@@ -44,14 +44,12 @@ public class Deck {
     if(!cards.isEmpty())
       return cards.remove(cards.size()-1); //remove() returns card removed, return that as end result
     else {
-      int i = 0;
       while(discards.size() > 1) //transfer discards (except head of discards) into deck
-      {
-        cards.set(i,discards.remove(0));
-        i++;
-      }
+        cards.add(discards.remove(0));
+      
       shuffle(); //re-shuffle after transferring discards into deck
-      return null;
+      
+      return cards.remove(cards.size()-1);
     }
   }
   
@@ -77,12 +75,12 @@ public class Deck {
   public String toString() {
     String s = "";
     
-    s = s + "Deck has " + cards.size() + " cards.\n";
+    s = s + "Deck has " + cards.size() + " card(s).\n";
     
     for(int i = 0; i < 10; ++i)
       s = s + (i+1) + ". " + cards.get(i) + "\n";
     
-    s = s + "\nDiscard pile has " + discards.size() + " cards.\n";
+    s = s + "\nDiscard pile has " + discards.size() + " card(s).\n";
     if(discards.size() > 0)
        s = s + "Top card of discard pile: " + discards.get(discards.size()-1);
     
