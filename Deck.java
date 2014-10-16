@@ -81,8 +81,8 @@ public class Deck {
       for(int i = 0; i < 10; ++i)
         s = s + (i+1) + ". " + cards.get(i) + "\n";
     }
-    else
-      s = s + "\nDiscard pile has " + discards.size() + " card(s).\n";
+      
+    s = s + "\nDiscard pile has " + discards.size() + " card(s).\n";
     
     if(discards.size() > 0) {
        s = s + "Suit of top card (discard pile): " + discards.get(discards.size()-1).getSuit() + "\n";
